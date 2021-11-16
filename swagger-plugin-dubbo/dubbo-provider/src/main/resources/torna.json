@@ -1,0 +1,35 @@
+{
+  // 开启推送
+  "enable": true,
+  // 扫描package，多个用;隔开
+  "basePackage": "cn.torna.dubbo.api",
+  // 推送URL，IP端口对应Torna服务器
+  "url": "http://localhost:7700/api",
+  // appKey
+  "appKey": "20201216788835306945118208",
+  // secret
+  "secret": "W.ZyGMOB9Q0UqujVxnfi@.I#V&tUUYZR",
+  // 模块token
+  "token": "47de878ae1b24721ab4486c5d4d05347",
+  
+  // 推送人
+  "author": "Jim",
+  // 打开调试:true/false
+  "debug": true,
+  // 是否替换文档，true：替换，false：不替换（追加）。默认：true
+  "isReplace": true,
+  // 0:springmvc, 1:dubbo或其它.如果是1，必须指定basePackage
+  "mode": 1,
+  "globalContentType": "application/json",
+  // 第三方jar中的class配置
+  "jarClass": {
+    "com.baomidou.mybatisplus.extension.plugins.pagination.Page": {
+      "records": { "value": "查询数据列表", "example": "" },
+      "total": { "value": "总数", "example": "100" },
+      "size": { "value": "页数", "example": "10" },
+      "current": { "value": "当前页", "example": "1" },
+      "countId": { "hidden": true },
+      "orders": { "hidden": true }
+    }
+  }
+}
